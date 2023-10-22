@@ -1,4 +1,4 @@
-import re, os, asyncio, random, string, keep_alive
+import re, os, asyncio, random, string
 from discord.ext import commands, tasks
 
 version = 'v2.7'
@@ -255,5 +255,4 @@ async def pause(ctx):
 
 
 
-keep_alive.keep_alive()
 client.run(f"{user_token}")
