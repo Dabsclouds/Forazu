@@ -7,14 +7,10 @@ user_token = os.environ['user_token']
 spam_id = os.environ['spam_id']
 report_id = os.environ['report_id']
 
-with open('data/pokemon','r', encoding='utf8') as file:
+with open('pokemon','r', encoding='utf8') as file:
     pokemon_list = file.read()
-with open('data/legendary','r') as file:
-    legendary_list = file.read()
-with open('data/mythical','r') as file:
+with open('mythical','r') as file:
     mythical_list = file.read()
-with open('data/level','r') as file:
-    to_level = file.readline()
 
 num_pokemon = 0
 shiny = 0
