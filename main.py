@@ -30,7 +30,7 @@ def solve(message, file_name):
     for i in hint:
         hint_string += i
     hint_replaced = hint_string.replace('_', '.')
-    with open(f"data/{file_name}", "r") as f:
+    with open(f"{file_name}", "r") as f:
         solutions = f.read()
     solution = re.findall('^'+hint_replaced+'$', solutions, re.MULTILINE)
     if len(solution) == 0:
